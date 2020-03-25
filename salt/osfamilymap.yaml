@@ -1,0 +1,18 @@
+---
+
+Redhat:
+  master:
+    pkg:
+      - salt-master
+    python_git:
+      - git
+      - python-pip
+      - python3-GitPython
+    service: salt-master
+  minion:
+    pkg:
+      - salt-minion
+  salt_ssh:
+    pkg: salt-ssh
+
+...

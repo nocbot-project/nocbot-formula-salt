@@ -1,0 +1,11 @@
+---
+
+repository:
+  description: SaltStack formula to manage SaltStack.
+  homepage: https://nocbot.org/
+
+collaborators:
+  - username: mantoso-ci
+    permission: pull
+
+...

@@ -1,0 +1,11 @@
+# Order matters
+export vagrant_tld_salt="test"
+export vagrant_domain_salt="nocbot.$vagrant_tld_salt"
+
+# Order does not matter
+export vagrant_box_cpus_salt="2"
+export vagrant_box_memory_salt="1024"
+export vagrant_box_salt="nocbot/centos-8"
+export vagrant_box_version_salt="8.1.1911"
+
+export vagrant_ip_addr_salt="172.16.0"

@@ -1,0 +1,15 @@
+# -*- mode: sls -*-
+#######################################################################
+# This file is managed by SaltStack. Local changes will be overwritten.
+# formula: salt.ssh
+# path: salt://salt/files/etc/salt/roster
+#######################################################################
+
+# password: can be added as an option. SSH keys are more secure.
+
+{%- for host in salt['publish.publish']('*', 'network.ip_addrs', 'eth0') %}
+{{ host.fqdn }}:
+  host: {{ host.ip }}
+  user: nocbot
+  sudo: True
+{%- endfor %}

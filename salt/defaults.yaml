@@ -1,0 +1,25 @@
+---
+
+# Non OS specific defaults belong here
+# OS specific defaults belong in one of the OS maps
+
+salt:
+  master:
+    enabled: false
+    environment: devmode
+    fileserver_backend: gitfs
+    formulas:
+      - salt
+    pillar:
+      engine: saltclass
+    service: salt-master
+  minion:
+    enabled: false
+    environment: devmode
+    hash_type: sha512
+    random_reauth_delay: 60
+    service: salt-minion
+  salt_ssh:
+    enabled: false
+
+...
