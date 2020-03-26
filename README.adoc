@@ -68,7 +68,6 @@ pillars:
 == Formula Dependencies
 
 - `nocbot-formula-firewalld`
-- `nocbot-formula-salt`
 
 == About Mantoso
 

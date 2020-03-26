@@ -6,6 +6,7 @@ classes:
   - default.devmode
 
 states:
+  - firewalld
   - salt
 
 pillars:
