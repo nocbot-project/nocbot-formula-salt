@@ -1,6 +1,7 @@
 ---
 
 states:
+  - firewalld
   - salt
 
 pillars:
